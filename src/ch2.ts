@@ -12,3 +12,13 @@ export function ex2(): number {
   const d = c.apple * 4;
   return d;
 }
+
+export const add = (x: number, y: number): number => x + y;
+
+export interface Assoc {
+  [key: string]: number | string;
+}
+export const pureAssoc = (key: string, value: number, obj: Assoc): Assoc => ({
+  ...obj,
+  [key]: value,
+});
