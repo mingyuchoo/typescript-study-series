@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "types": ["node"],
+    "types": ["mocha", "node"],
     "target": "es6",
     "lib": [
-      "dom",
       "esnext"
     ],
     "allowJs": true,
