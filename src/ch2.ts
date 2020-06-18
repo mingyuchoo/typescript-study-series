@@ -1,24 +1,28 @@
-export function ex1(): void {
-  console.log('Hello, TypeScript!');
+/**
+ * Chapter2. TypeScript: a 10_000 Foot View
+ */
+
+export function ex1(): string {
+  return 'Hello, TypeScript!';
 }
 
 export function ex2(): number {
-  const a = 1 + 2;
-  const b = a + 3;
-  const c = {
+  let a: number = 1 + 2;
+  let b: number = a + 3;
+  let c = {
     apple: a,
     banana: b,
   };
-  const d = c.apple * 4;
+  let d: number = c.apple * 4;
   return d;
 }
 
-export const add = (x: number, y: number): number => x + y;
+export let add = (x: number, y: number): number => x + y;
 
 export interface Assoc {
   [key: string]: number | string;
 }
-export const pureAssoc = (key: string, value: number, obj: Assoc): Assoc => ({
+export let pureAssoc = (key: string, value: number, obj: Assoc): Assoc => ({
   ...obj,
   [key]: value,
 });

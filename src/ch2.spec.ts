@@ -4,9 +4,21 @@ should();
 import * as ch2 from './ch2';
 
 describe('ch2', () => {
+  describe('ex1', () => {
+    it('should return a message', () => {
+      ch2.ex1().should.have.string('Hello, TypeScript!');
+    });
+  });
+
+  describe('ex2', () => {
+    it('should return 12', () => {
+      ch2.ex2().should.equal(12);
+    });
+  });
+
   describe('add', () => {
-    it('add 2 and 4', () => {
-      ch2.add(2, 4).should.be.equal(6);
+    it('should return 6', () => {
+      ch2.add(2, 4).should.equal(6);
     });
   });
 
@@ -14,9 +26,10 @@ describe('ch2', () => {
     const person = {
       name: 'Bob',
     };
-    it('add key, value', () => {
+
+    it('should addded a key and value', () => {
       const result: ch2.Assoc = ch2.pureAssoc('shoeSize', 400, person);
-      result.should.be.eql({ name: 'Bob', shoeSize: 400 });
+      result.should.eql({ name: 'Bob', shoeSize: 400 });
     });
   });
 });

@@ -12,12 +12,14 @@ plugins:
   - '@typescript-eslint'
   - prettier
 extends:
-  - eslint:recommended
-  - plugin:@typescript-eslint/recommended
-  - plugin:@typescript-eslint/recommended-requiring-type-checking
+  # for study, commet out below extendtions
+  # - eslint:recommended
+  # - plugin:@typescript-eslint/recommended
+  # - plugin:@typescript-eslint/recommended-requiring-type-checking
   - plugin:prettier/recommended
 rules:
   prettier/prettier: error
+  # for study, comment out below rules
   # '@typescript-eslint/explicit-function-return-type': off
   # '@typescript-eslint/prefer-regexp-exec': off
   # '@typescript-eslint/no-unused-vars': off
