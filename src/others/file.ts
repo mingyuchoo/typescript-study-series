@@ -12,7 +12,6 @@ export function fileRead() {
         group: item[2],
       };
     });
-    console.log('>>> ', json);
     return json;
   } catch (error) {
     return error;

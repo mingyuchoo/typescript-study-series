@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "types": ["mocha", "node"],
-    "target": "es6",
+    "target": "esnext",
     "lib": [
       "dom",
       "esnext"

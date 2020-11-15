@@ -1,7 +1,7 @@
 import { should } from 'chai';
 should();
 
-import * as file from './file';
+import * as file from '../others/file';
 
 describe('file', () => {
   describe('fileRead()', () => {

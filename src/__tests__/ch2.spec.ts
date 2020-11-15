@@ -1,7 +1,7 @@
 import { should } from 'chai';
 should();
 
-import * as ch2 from './ch2';
+import * as ch2 from '../ch2';
 
 describe('ch2', () => {
   describe('ex1', () => {
