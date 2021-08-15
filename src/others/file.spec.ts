@@ -1,7 +1,4 @@
-import { should } from 'chai';
-should();
-
-import * as file from '../others/file';
+import * as file from '@/others/file';
 
 describe('file', () => {
   describe('fileRead()', () => {
@@ -15,7 +12,7 @@ describe('file', () => {
     ];
 
     it('should return "Hello, World!"', () => {
-      file.fileRead().should.eql(data);
+      expect(file.fileRead()).toEqual(data);
     });
   });
 });

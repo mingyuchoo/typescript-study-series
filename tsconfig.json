@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
-    "types": ["mocha", "node"],
+    "types": ["node", "jest"],
     "target": "esnext",
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "lib": [ "esnext" ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,13 +18,9 @@
     "sourceMap": true,
     "baseUrl": "./",
     "paths": {
-      "@/": ["src/"]
+      "@/*": ["src/*"]
     }
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": [ "src", "jest.config.ts" ],
+  "exclude": [ "node_modules" ]
 }
