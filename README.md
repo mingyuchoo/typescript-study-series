@@ -37,3 +37,10 @@ fnm default <version>
 # Uninstalling
 fnm uninstall <version>
 ```
+
+## Set Node version to your `$HOME`
+
+```bash
+cd $HOME
+echo 'v23.9.0' > .node-version
+```
